@@ -1,4 +1,4 @@
-import ThreadTile from "./ThreadTile"
+import ThreadTile from "./ThreadTile/ThreadTile"
 
 export default function ThreadList() {
     const questions = [
@@ -48,7 +48,7 @@ export default function ThreadList() {
         <div className="mt-4">
             <h1 className="sr-only">Recent questions</h1>
             <ul className="space-y-4">
-                {questions.map((question) => <ThreadTile threadData={question} />)}
+                {questions.map((question) => <ThreadTile key={question.id} threadData={question} />)}
             </ul>
         </div>
     )

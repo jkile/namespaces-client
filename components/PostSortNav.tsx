@@ -8,7 +8,7 @@ export default function PostSortNav() {
     const tabs = [
         { name: 'Recent', href: '#', current: true },
         { name: 'Most Liked', href: '#', current: false },
-        { name: 'Most Answers', href: '#', current: false },
+        { name: 'Most Responses', href: '#', current: false },
     ]
     return (
         <div className="px-4 sm:px-0">

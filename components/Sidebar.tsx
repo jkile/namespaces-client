@@ -11,7 +11,7 @@ export default function Sidebar() {
     const navigation = [
         { name: 'Home', href: '#', icon: HomeIcon, current: true },
         { name: 'Popular', href: '#', icon: FireIcon, current: false },
-        { name: 'Communities', href: '#', icon: UserGroupIcon, current: false },
+        { name: 'Namespaces', href: '#', icon: UserGroupIcon, current: false },
         { name: 'Trending', href: '#', icon: TrendingUpIcon, current: false },
     ]
 
@@ -26,7 +26,7 @@ export default function Sidebar() {
         { name: 'Gaming', href: '#' },
     ]
     return (
-        <div className="hidden lg:block lg:col-span-3 xl:col-span-2">
+        <div className="hidden bg-gray-200 p-2 rounded-xl lg:block lg:col-span-3 xl:col-span-2">
             <nav aria-label="Sidebar" className="sticky top-4 divide-y divide-gray-300">
                 <div className="pb-8 space-y-1">
                     {navigation.map((item) => (
@@ -62,8 +62,11 @@ export default function Sidebar() {
                             <a
                                 key={community.name}
                                 href={community.href}
-                                className="group flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                                className="group flex items-center space-x-4 px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
                             >
+                                <div className="flex-shrink-0">
+                                    <img className="h-8 w-8 rounded-full" src={'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'} alt="" />
+                                </div>
                                 <span className="truncate">{community.name}</span>
                             </a>
                         ))}

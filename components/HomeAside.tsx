@@ -4,7 +4,21 @@ import { PlusIcon, ChatAltIcon } from '@heroicons/react/solid';
 export default function HomeAside() {
     const whoToFollow = [
         {
-            name: 'Leonard Krasner',
+            name: 'Synthesizers',
+            handle: 'leonardkrasner',
+            href: '#',
+            imageUrl:
+                'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        },
+        {
+            name: 'Photography',
+            handle: 'leonardkrasner',
+            href: '#',
+            imageUrl:
+                'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        },
+        {
+            name: 'Rust',
             handle: 'leonardkrasner',
             href: '#',
             imageUrl:
@@ -32,7 +46,7 @@ export default function HomeAside() {
                     <div className="bg-white rounded-lg shadow">
                         <div className="p-6">
                             <h2 id="who-to-follow-heading" className="text-base font-medium text-gray-900">
-                                Who to follow
+                                Recommended Namespaces
                             </h2>
                             <div className="mt-6 flow-root">
                                 <ul className="-my-4 divide-y divide-gray-200">
@@ -45,9 +59,9 @@ export default function HomeAside() {
                                                 <p className="text-sm font-medium text-gray-900">
                                                     <a href={user.href}>{user.name}</a>
                                                 </p>
-                                                <p className="text-sm text-gray-500">
+                                                {/* <p className="text-sm text-gray-500">
                                                     <a href={user.href}>{'@' + user.handle}</a>
-                                                </p>
+                                                </p> */}
                                             </div>
                                             <div className="flex-shrink-0">
                                                 <button
@@ -55,7 +69,7 @@ export default function HomeAside() {
                                                     className="inline-flex items-center px-3 py-0.5 rounded-full bg-primary-50 text-sm font-medium text-primary-700 hover:bg-primary-100"
                                                 >
                                                     <PlusIcon className="-ml-1 mr-0.5 h-5 w-5 text-primary-400" aria-hidden="true" />
-                                                    <span>Follow</span>
+                                                    <span>Join</span>
                                                 </button>
                                             </div>
                                         </li>
